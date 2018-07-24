@@ -109,4 +109,7 @@ APACHE SPARK
 5. What are textfile and wholetextfile? (Check)
 6. What is Spark Context? (Check)
 7. If I have one RDD and one DAG cycle ran, I want create another RDD2 from RDD, do I need to run the DAG for RDD as well? If not then how would you make it happen to run the DAG cycle for RDD2 only? (Check)
-8. What is persistent RD
+8. What is persistent RDD and where are they stored - memory/disk? (Check)
+9. What are the different tranformations and actions have you used in Spark? (Check)
+10. Have you used Spark SQL? If yes, then how would you execute the SQL commands? (Check)
+11. What is lambda in Pyspark? (Check)
