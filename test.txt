@@ -5,3 +5,108 @@ By Big Data I mean - Hadoop, HDFS, YARN, Hive, Sqoop, Map Reduce, Pig and Apache
 I have come across the interview questions related to all these topics and we will discuss them topic wise.
 
 
+HADOOP
+
+1. What is Hadoop? (Copy)
+2. Why Hadoop is preferred over RDBMS? (Copy)
+3. What are the major components of Hadoop? (HDFS, NAME NODE, DATA NODE, YARN)
+4. How many data nodes are used in your project? (Check)
+5. Which version of Hadoop are you using? (Check
+
+HDFS
+
+1. What is HDFS? (copy)
+2. In HDFS when does it check the schema - read or write? (copy)
+3. Is it faster than RDBMS? If not then why should we use it? (Copy)
+4. Where are the HDFS related Config files are stored? (Copy)
+5. What are the different Config files and what information they store? (Copy)
+6. What is the default replication factor of blocks in HDFS? (3)
+7. What are name nodes and data nodes? (Copy)
+8. What is the difference between Standby Name node and scondary name node? (Copy)
+9. How can you change the replication factor of a file using command line? (Copy)
+10. Command used to transfer the file from local file system to HDFS? (hdfs dfs -put)
+11. What are the port numbers for different nodes? (Copy)
+12. Explain anatomy of file read and write?
+
+YARN
+
+1. What are the different components of YARN and what functions do they perform? (Copy)
+2. What are the number of App masters? (Copy)
+3. How do name nodes/ data nodes communicate with each other? (Copy)
+4. Explain architecture of YARN? (Copy)
+
+HIVE
+
+1. What is Hive and how is it different from RDBMS? (Copy)
+2. What are inetrnal and external tables and the difference between them? (Copy)
+3. If I have a table with years months in it, how would you write a query to select data from year 2015 (Write it using partition)
+4. What is partitioning? (Copy)
+5. What is static and dynamic partitioning? (Copy)
+6. What type of compression techniques have you used in HIVE? (Check Shikha's links)
+7. In internal table also, we can mention the location of the file, then how is it different from external table apart from deletion? (Check)
+8. If i partition a table with a column year, how would the data look like? (Check)
+9. What is Hash map table? (Check)
+10. What is map side join and reduce side join? (Check)
+11. What is bucketing? (Copy)
+12. How bucketing is different from partitionin/g? (Copy)
+13. In which scenario, partitioning can become an overhead? (Check)
+14. How would you performance tune/optimise a Hive query? (Check Shikha's links)
+15. What is hashing in Hive? (Check)
+16. What types of file formats have you used in Hive? (Check Shikha's links)
+17. What is ORC format and why would you use it? (Check Shikha's links)
+18. In how many ways can you insert the data into a table in Hive? (load, insert, insert overwrite)
+19. What is the default directory in which Hive data is stored for internal tables? (/usr/warehouse/hive)
+20. Can you update the data in Hive table? If yes, how? (Check)
+21. Explain architecture of Hive? (Copy)
+22. What is metastore? (Copy)
+23. What is local database? (Copy)
+24. Where is the metadata stored for Hive tables, in local database or metastore or Name node? (check)
+25. Which version of Hive are you using? (Check)
+
+SQOOP
+
+1. What is sqoop and write the command to load the data from RDBMS to HDFS? (sqoop -import)
+2. If you have some data in RDBMS and suppose you have fetched that data into HDFS, then again some data is inserted in RDBMS, then how will you import the latest data from RDBMS  to HDFS? (Use incremental and check column)
+3. Can you export the data from Hive to RDBMS? Write the command? (sqoop -export)
+4. What is the default number of mappers in Sqoop? (Check)
+5. How many reducers would you use to import the data? (None)
+6. How will you change the number of mappers in Sqoop import (-m)
+7. How much data do you sqoop via batch processing into HDFS? (Check)
+8. Which version of Sqoop are you using? (Check)
+
+MAP REDUCE
+
+1. What is Map reduce, briefly explain the architecture/flow of Map reduce? (Copy)
+2. How would you change the number of mappers for a map reduce job? (Can't be changed, depends on input splits)
+3. How would you change the number of reducers for a map reduce job? (Copy setnumreducetasks)
+4. What is mapper and what does it do? (Copy)
+5. What is reducer and what does it do? (Copy)
+6. What is combiner and why should we use it? (Copy)
+7. In which scenarios combiner should not be used? (Copy, associative)
+8. What is partitioner and why is it used? (Copy)
+9. In which phase sort & shuffle is used? (Copy)
+10. Can you create your own partitioner? (Custom partitions)
+11. We run the map reduce job using one input file. How can we run the same job using multipe input files? (Check)
+12. Write a program for word count in Java and python? (Practice)
+13. Write a program of secondary sort in Java and python? (Practice)
+14. On what factor does number of mapper depends? (Input splits)
+15. How does multiple Reducers communicate with each other? (they don't communicate every o/p is different)
+16. What are the different input formats in Hadoop/Map reduce? (Text input etc. Check)
+
+PIG
+
+1. How to run the Pig script? (Video)
+2. What is the difference between group and co group? (Video)
+3. What does Pig do? Explain the architecture? (Video)
+4. What are the different commands have you used in Pig? (Video)
+
+APACHE SPARK
+
+1. Explain architecture of Spark? (Copy)
+2. Which version of Spark are you using? (Check)
+3. What are RDDs, Datasets and dataframes? (Check)
+4. What is DAG cycle? (Check)
+5. What are textfile and wholetextfile? (Check)
+6. What is Spark Context? (Check)
+7. If I have one RDD and one DAG cycle ran, I want create another RDD2 from RDD, do I need to run the DAG for RDD as well? If not then how would you make it happen to run the DAG cycle for RDD2 only? (Check)
+8. What is persistent RD
