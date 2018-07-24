@@ -1,1 +1,7 @@
-Hi 
+Hi, this file will bring you across some real life interview questions related to Big data.
+
+By Big Data I mean - Hadoop, HDFS, YARN, Hive, Sqoop, Map Reduce, Pig and Apache Spark.
+
+I have come across the interview questions related to all these topics and we will discuss them topic wise.
+
+
