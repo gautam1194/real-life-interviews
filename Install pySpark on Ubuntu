@@ -1,1 +1,53 @@
 hi
+
+Download Anaconda from http://docs.continuum.io/anaconda/ for 32/64 bit system
+
+After downloading the Anaconda installer, run the following command from a terminal:
+
+$ bash Anaconda.x.x.x-Linux-x86[_64].sh
+
+After accepting the license terms, you will be asked to specify the install location (which defaults to ~/anaconda).
+
+Note: You do NOT need root privileges to install Anaconda, if you select a user writable install location, such as ~/anaconda.* 
+After the self extraction is finished, you should add the anaconda binary directory to your PATH environment variable.
+
+How to add directory path in PATH environment variable:
+
+
+Next step is to check if Java is installed on your system or not.
+
+Run the command on your terminal to check:
+
+java -version
+
+If it is installed then move onto next step
+other wise
+Install Java from https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html
+
+These instructions use the following file:
+
+jdk-8uversion-linux-x64.tar.gz
+
+    Download the file.
+
+    Before the file can be downloaded, you must accept the license agreement. 
+    The archive binary can be installed by anyone (not only root users), in any location that you can write to. 
+    However, only the root user can install the JDK into the system location.
+
+    Change directory to the location where you would like the JDK to be installed, 
+    then move the .tar.gz archive binary to the current directory.
+
+    Unpack the tarball and install the JDK.
+
+    % tar zxvf jdk-8uversion-linux-x64.tar.gz
+
+    The Java Development Kit files are installed in a directory called jdk1.8.0_version in the current directory.
+
+    Delete the .tar.gz file if you want to save disk space.
+    
+    
+Then check the java -version again.
+
+Next is to install Spark on your system.
+
+
